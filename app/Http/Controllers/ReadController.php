@@ -2,20 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Negara;
+use App\Kota;
 
 class ReadController extends Controller
 {
     public function index()
     {
-        $negara = Negara::all();
-        return view('read', compact('negara'));
+        $citys = Kota::all();
+        return view('read', compact('citys'));
     }
 
-    // detail Negara - Kota
-    public function detailNk($id)
+    // detail Kota - Negara
+    public function detailKn($id)
     {
-        $dtlNk = Negara::where('id', $id)->firstOrFail();
-        return view('negara', compact('dtlNk'));
+        $dtlKn = Kota::where('id', $id)->firstOrFail();
+        return view('kota', compact('dtlKn'));
     }
 }

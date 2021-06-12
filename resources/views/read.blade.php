@@ -6,10 +6,10 @@
         <div class="col-md-6">
             <h1 class="mt-5">Negara - Kota</h1>
             <ul class="list-group">
-                @foreach ($negara as $ngr)
+                @foreach ($citys as $city)
                 <li class="list-group-item">
-                    {{ $ngr->nama ?? null }} - {{ $ngr->iniKota->nama ?? null }}
-                    <a href="{{URL::to('/')}}/negara/{{$ngr->id}}" class="badge badge-primary float-right ml-1 p-2">detail</a>
+                    {{ $city->nama ?? null }} - {{ $city->iniNegara->nama?? null }}
+                    <a href="{{URL::to('/')}}/kota/{{$city->id}}" class="badge badge-primary float-right ml-1 p-2">detail</a>
                 </li>
                 @endforeach
             </ul>
