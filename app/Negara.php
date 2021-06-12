@@ -10,6 +10,6 @@ class Negara extends Model
 
     public function iniKota()
     {
-        return $this->hasOne(Kota::class, 'id');
+        return $this->hasOne(Kota::class, 'negara_id', 'id');
     }
 }
