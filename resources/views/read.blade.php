@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row mt-3">
         <div class="col-md-6">
-            <h1 class="mt-5">Negara - Kota</h1>
+            <h1 class="mt-5">Kota - Negara</h1>
             <ul class="list-group">
                 @foreach ($citys as $city)
                 <li class="list-group-item">
