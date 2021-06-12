@@ -15,5 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 Route::get('/read', 'ReadController@index');
-Route::get('/negara/{id}', 'ReadController@detailNegara');
-Route::get('/kota/{id}', 'ReadController@detailKota');
+Route::get('/negara/{id}', 'ReadController@detailNk');
