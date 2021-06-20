@@ -25,6 +25,7 @@
                 <div class="navbar-nav">
                     <a class="nav-link active" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
                     <a class="nav-link active" href="{{ url('read') }}">Read</a>
+                    <a class="nav-link active" href="{{ url('crud') }}">CRUD</a>
                 </div>
             </div>
         </div>
